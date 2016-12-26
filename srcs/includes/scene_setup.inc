@@ -11,6 +11,7 @@
 // some standard finishes
 #include "finish.inc"
 #include "textures.inc"
+#include "functions.inc"
 /*
   finish {
     Dull               // large, soft highlight

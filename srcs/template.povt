@@ -1,0 +1,8 @@
+#include "srcs/includes/scene_setup.inc"
+#include "srcs/includes/common_maths.inc"
+#include "srcs/includes/functions_${FUNCTION_SHELL}.inc"
+
+#declare using_function = function (x,y,z) { ${RADIAL_FUNCTION}(1,r(x,y,z)) * ${ANGULAR_FUNCTION}(x,y,z) }
+
+#include "srcs/includes/draw_two_phase_isosurface.inc"
+
