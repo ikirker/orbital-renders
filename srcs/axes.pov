@@ -1,4 +1,4 @@
-#include "srcs/includes/scene_setup.pov"
+#include "srcs/includes/scene_setup.inc"
 
 #declare major_width = 1;
 #declare major_length= 50;
