@@ -1,0 +1,6 @@
+# Output pictures
+output/
+*.png
+
+# Templated files
+srcs/auto_*
