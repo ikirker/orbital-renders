@@ -1,6 +1,6 @@
 // vim:ft=pov
 
-#declare R5f = function(nucCharge,dist){(1/(300*sqrt(70))) * (8 - p(nucCharge,dist,5))* pow(p(nucCharge,dist,5),3) * pow(nucCharge,3/2) * exp(-p(nucCharge,dist,5)/2)}
+#declare R5f = function(Q,dist){(1/(300*sqrt(70))) * (8 - p(Q,dist,5))* pow(p(Q,dist,5),3) * pow(Q,3/2) * exp(-p(Q,dist,5)/2)}
 
 // Cubic set
 #declare Y5fx3 = function(x,y,z){ pow(4*pi,-0.5) * sqrt(7/4) * x * (5 * pow(x,2) - 3 * pow(r(x,y,z),2)) * pow(r(x,y,z),-3) }

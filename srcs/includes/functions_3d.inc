@@ -1,6 +1,6 @@
 
-#declare R3d = function(nucCharge,dist) {
-  (1 / (9*sqrt(30))) * p(nucCharge,dist, 3) * pow(nucCharge,3/2) * exp(-p(nucCharge,dist,3)/2)
+#declare R3d = function(Q,dist) {
+  (1 / (9*sqrt(30))) * p(Q,dist, 3) * pow(Q,3/2) * exp(-p(Q,dist,3)/2)
 }
 
 #declare Y3dz2 = function(x,y,z){ 

@@ -1,6 +1,6 @@
 
-#declare R2s = function(nucCharge,dist) {
-  (0.5*sqrt(2)) * (2 - p(nucCharge, dist, 2)) * pow(nucCharge, 3/2) * exp(-p(nucCharge,dist,2)/2)
+#declare R2s = function(Q,dist) {
+  (0.5*sqrt(2)) * (2 - p(Q, dist, 2)) * pow(Q, 3/2) * exp(-p(Q,dist,2)/2)
 }
 
 #declare Y2s = function(x,y,z){ 
