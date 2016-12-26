@@ -7,8 +7,8 @@ V_DIR=srcs
 POV_QUALITY=5
 #POV_AA=-A
 
-IMG_WIDTH=200
-IMG_HEIGHT=200
+IMG_WIDTH=400
+IMG_HEIGHT=400
 
 POV_FLAGS=-GA +GF +GW +A0.1 +AM2 +H$(IMG_HEIGHT) +W$(IMG_WIDTH) +FN +Q$(POV_QUALITY) $(POV_AA) -UA -d
 
@@ -27,9 +27,6 @@ clean:
 
 output/%.png: srcs/%.pov
 	$(POV_EXE) $(POV_FLAGS) +I"$<" +O"$@"
-
-srcs/%.pov: srcs/template.povt $(wildcard srcs/includes/*)
-	$(ENVSUBST) <$< > $@
 
 output:
 	mkdir output
