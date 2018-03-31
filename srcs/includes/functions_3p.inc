@@ -4,13 +4,13 @@
 }
 
 #declare Y3px = function(x,y,z) {
-  (sqrt(3) * x / r) * pow(4 * pi, -1/2)
+  (sqrt(3) * x / r(x,y,z)) * pow(4 * pi, -1/2)
 }
 
 #declare Y3py = function(x,y,z) {
-  (sqrt(3) * y / r) * pow(4 * pi, -1/2)
+  (sqrt(3) * y / r(x,y,z)) * pow(4 * pi, -1/2)
 }
 
 #declare Y3pz = function(x,y,z) {
-  (sqrt(3) * z / r) * pow(4 * pi, -1/2)
+  (sqrt(3) * z / r(x,y,z)) * pow(4 * pi, -1/2)
 }
